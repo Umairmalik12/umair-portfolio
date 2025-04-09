@@ -9,31 +9,31 @@ const AboutPage = () => {
       </h1>
 
       {/* Hero Section */}
-      <div className="flex flex-col md:flex-row items-center gap-10">
+      <div className="flex flex-col md:flex-row items-start gap-10">
         <div className="w-full md:w-1/3 flex justify-center">
-          <div className="w-70 h-70 overflow-hidden  shadow-2xl border-4 border-primary transform hover:scale-105 transition duration-500 ease-in-out">
+          <div className="w-full overflow-hidden  shadow-2xl border-4 border-primary transform hover:scale-105 transition duration-500 ease-in-out">
             <Image
               src="/images/Screenshot_2.jpg"  // Image path
               alt="Umair Javed - Full Stack Developer"
               width={250}
               height={260}
-              className="object-cover"
+              className="object-cover w-full px-5"
               priority
             />
           </div>
         </div>
 
-        <div className="w-full md:w-2/3 space-y-6 text-lg leading-relaxed text-gray-800">
-          <p>
+        <div className="w-full md:w-2/3 space-y-6 text-lg leading-relaxed text-justify text-gray-800">
+          <p className="text-justify">
             Umair Javed is a passionate and highly skilled Full-Stack Developer with over five years of hands-on experience in building and maintaining scalable, production-level web and mobile applications. He holds an MPhil in Computer Science and a BS in Information Technology.
           </p>
-          <p>
+          <p className='text-justify'>
             Umair specializes in modern frameworks and architectures including Angular, React, Node.js, and Loopback. His experience spans enterprise systems, hybrid mobile apps, and data-driven dashboards. Whether leading frontend design or backend API development, Umair ensures clean code, optimized performance, and long-term maintainability.
           </p>
-          <p>
+          <p className='text-justify'>
             His portfolio includes successful projects such as <strong>ECMS Frontend & Backend, XY Community, HomeaZZon, FoodSoft API & Web, POS Systems, BurjSoft, FoodVez, Gridster, HMC Software</strong>, and many more. These solutions span industries like healthcare, retail, tech, and community platforms.
           </p>
-          <p>
+          <p className='text-justify'>
             Umair has a keen eye for detail and UX, blending his technical know-how with real-world problem-solving. His ability to integrate third-party services, manage authentication flows, optimize databases, and build cross-platform mobile apps makes him a versatile asset in any software team.
           </p>
         </div>

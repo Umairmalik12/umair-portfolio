@@ -8,7 +8,7 @@ const cosmic = createBucketClient({
   readKey: READ_KEY,
 })
 
-const is404 = error => /not found/i.test(error.message)
+const is404 = error => /not found/i.test(error?.message)
 
 export async function getPreviewPostBySlug(slug) {
   try {
@@ -120,7 +120,7 @@ export async function getSiteSettings() {
   try {
     const data = await cosmic.objects
       .findOne({
-        type: 'site-settings',
+        type: 'site-settings', 
         slug: 'site-settings',
       })
       .props('metadata')
